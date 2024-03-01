@@ -1,12 +1,5 @@
-
-
 // функция для проверки строки
 const checkLength = (string, lengthMax) => string.length <= lengthMax;
-
-сonsole.log(checkLength('стронгjhtgyu', 32));
-
-
-
 
 // функция для проверки на палидром
 const isPalindrome = (string) => {
@@ -21,6 +14,3 @@ const isPalindrome = (string) => {
 
   return string === reversed;
 };
-
-console.log(isPalindrome('топот'));
-

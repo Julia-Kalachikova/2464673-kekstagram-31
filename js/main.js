@@ -15,14 +15,13 @@ const createPhotoObject = (id, url, description, likes, comments) => {
   };
 }
 
-const createCommentObject = (id, avatar, message, name) => {
-  return {
+const createCommentObject = (id, avatar, message, name) => ({
     id: id,
     avatar: avatar,
     message: message,
     name: name
-  };
-};
+  };)
+
 
 const getRandomInteger = (a, b) => {
   const lower = Math.ceil(Math.min(a, b));
@@ -69,5 +68,3 @@ const createCommentObjectArray = () => {
   }
   return arrayResultFinish;
 };
-
-console.log(createCommentObjectArray());
